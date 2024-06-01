@@ -1,10 +1,12 @@
 import express from 'express';
 
 const router = express.Router();
-import { createUser } from '../controllers/userCntrl';
+
+import { createUser } from '../controllers/userCntrl.js';
 
 
-// POST API 
+// POST API
+
 router.post("/register", createUser)
 
-export { router as userRoute };
+export { router as userRoutes };
